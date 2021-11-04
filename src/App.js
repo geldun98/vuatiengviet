@@ -18,7 +18,18 @@ function App() {
     setCount(count + 1);
   };
 
-  const listQuestion = useRef(["123", "456", "789", "123", "456", "789"]);
+  const listQuestion = useRef([
+    "ốcvít",
+    "quaycóp",
+    "nhảyđầm",
+    "lybia",
+    "tươngbần",
+    "cákho",
+    "càphê",
+    "tựtin",
+    "vượtbậc",
+    "chuacay",
+  ]);
 
   const [shuffleListQuestion, setShuffleListQuestion] = useState(() => {
     const arrayShuffleList = [];
@@ -65,6 +76,11 @@ function App() {
 
   return (
     <div>
+      {
+        <audio autoplay style={{ display: "none" }}>
+          <source src="./windyhill.mp3" type="audio/mpeg"></source>
+        </audio>
+      }
       {show && (
         <Scramble
           question={shuffleQuestion}
