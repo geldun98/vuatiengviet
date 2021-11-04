@@ -57,7 +57,6 @@ function App() {
   }
 
   const lengthQuestion = listQuestion.current.length;
-  const finalShuffleListQuestion = useRef(shuffleListQuestion);
 
   const handleEnd = (score) => {
     setFinalScore(score);
