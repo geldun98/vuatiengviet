@@ -77,7 +77,7 @@ function App() {
   return (
     <div>
       {
-        <audio autoplay style={{ display: "none" }}>
+        <audio autoplay controls style={{ display: "none" }}>
           <source src="./windyhill.mp3" type="audio/mpeg"></source>
         </audio>
       }
