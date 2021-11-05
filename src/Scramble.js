@@ -1,6 +1,5 @@
 import React from "react";
-import { useState, useRef } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useState, useRef, useEffect } from "react";
 
 import "./App.scss";
 export const Scramble = ({
