@@ -33,6 +33,7 @@ function App() {
 
   const [shuffleListQuestion] = useState(() => {
     const arrayShuffleList = [];
+
     for (let i in listQuestion.current) {
       arrayShuffleList.push(listQuestion.current[i].split(""));
     }
@@ -75,11 +76,6 @@ function App() {
 
   return (
     <div>
-      {
-        <audio autoPlay style={{ display: "none" }}>
-          <source src="./windyhill.mp3" type="audio/mpeg"></source>
-        </audio>
-      }
       {show && (
         <Scramble
           question={shuffleQuestion}
