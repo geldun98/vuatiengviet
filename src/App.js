@@ -31,7 +31,7 @@ function App() {
     "chuacay",
   ]);
 
-  const [shuffleListQuestion, setShuffleListQuestion] = useState(() => {
+  const [shuffleListQuestion] = useState(() => {
     const arrayShuffleList = [];
     for (let i in listQuestion.current) {
       arrayShuffleList.push(listQuestion.current[i].split(""));
